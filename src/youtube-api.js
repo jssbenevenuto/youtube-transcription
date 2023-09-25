@@ -9,7 +9,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 window.YTPlayer = null
 
-function getLoadVideo(url) {
+export function getLoadVideo(url) {
     const [part1, part2] = url.split('?v=')
     const [videoId, other] = part2.split('&')
 
